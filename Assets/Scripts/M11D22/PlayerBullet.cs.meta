@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: a9068ef74be7f914c88502e449543f78
+guid: f7281d6a19e0a58458167e948b8d76e6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - playerBullet: {fileID: 6564711890193746724, guid: 8b7973fe9e5248d48a805fa694cf3529, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

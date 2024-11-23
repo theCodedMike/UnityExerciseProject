@@ -151,6 +151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9068ef74be7f914c88502e449543f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 20
+  maxLeftMove: -8
+  maxRightMove: 8
+  maxUpMove: 4.5
+  maxDownMove: -4
+  playerBullet: {fileID: 6564711890193746724, guid: 8b7973fe9e5248d48a805fa694cf3529, type: 3}
 --- !u!1 &9164368842272245518
 GameObject:
   m_ObjectHideFlags: 0
