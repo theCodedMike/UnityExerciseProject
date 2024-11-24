@@ -4,10 +4,16 @@ using UnityEngine;
 public class ObjectPool
 {
     private static ObjectPool _instance;
-    private static readonly Object Lock = new();
+    //private static readonly Object Lock = new();
+    public static ObjectPool Instance
+    {
+
+        get { return _instance ??= new ObjectPool(); }
+    }
+    
     private readonly Dictionary<string, Queue<GameObject>> _pool;
     
-    public static ObjectPool GetInstance()
+    /*public static ObjectPool GetInstance()
     {
         if (_instance == null)
         {
@@ -21,7 +27,7 @@ public class ObjectPool
         }
 
         return _instance;
-    }
+    }*/
 
     private ObjectPool()
     {
@@ -54,4 +60,8 @@ public class ObjectPool
 
         return result;
     }
+
+    // 获取某种类型的游戏对象的个数
+    public int GetCount(string key) => _pool.ContainsKey(key) ? _pool[key].Count : 0;
+
 }

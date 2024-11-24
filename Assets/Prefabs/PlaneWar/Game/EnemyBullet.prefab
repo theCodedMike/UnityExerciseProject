@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6117241851186338855}
   m_Layer: 9
   m_Name: EnemyBullet
-  m_TagString: PlayerBullet
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &251443174479236089
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -158,6 +158,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 425000903241424811}
     m_Modifications:
+    - target: {fileID: 4097986693364267891, guid: 81557b2e47dcf184ab3dd0aca4c2d26f, type: 3}
+      propertyPath: enemyBullet
+      value: 
+      objectReference: {fileID: 135378068927394832}
     - target: {fileID: 6320623377090536897, guid: 81557b2e47dcf184ab3dd0aca4c2d26f, type: 3}
       propertyPath: m_Name
       value: Enemy
