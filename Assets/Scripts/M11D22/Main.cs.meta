@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - playerShip: {fileID: 7749610709814912392, guid: d5239a4187e98944d8eabf455531c767, type: 3}
   - enemyShip: {fileID: 6320623377090536897, guid: 81557b2e47dcf184ab3dd0aca4c2d26f, type: 3}
+  - daZhao: {fileID: 3353586199775952668, guid: 0869f10905d49934eb9700d65485dffd, type: 3}
+  - shockwave: {fileID: 2688599329498676898, guid: 0d07e5f2c0a53cb4080ea3b0ae28cec3, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

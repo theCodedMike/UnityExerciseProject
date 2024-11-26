@@ -5,6 +5,9 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - enemyBullet: {fileID: 135378068927394832, guid: a9491811955673c4d8682b666f27322c, type: 3}
+  - explosionPrefab: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
+  - explodeSound: {fileID: 8300000, guid: 72e76810224064300b7d32e8322a5d12, type: 3}
+  - fireSound: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
