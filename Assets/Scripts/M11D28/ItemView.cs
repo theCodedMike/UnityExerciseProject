@@ -20,6 +20,12 @@ namespace Assets.Scripts.M11D28
 
         public Action<ItemView> OnSelectedItemView;
 
+        private Image bgImage; // 物体的背景板，是一张图片
+
+        void Awake()
+        {
+            bgImage = transform.GetComponent<Image>();
+        }
         public void SetValue(Item item)
         {
             this.item = item;
@@ -36,6 +42,19 @@ namespace Assets.Scripts.M11D28
         public void OnPointerClick(PointerEventData eventData)
         {
             OnSelectedItemView(this);
+        }
+
+        // Item被选中后，改变其背景图片
+        public void ChangeBackgroundWhenClick()
+        {
+            bgImage.sprite = Resources.Load<Sprite>("UI/Bg/frame_char");
+        }
+
+        // Item失去焦点后恢复背景
+        public void RestoreBackgroundWhenClick()
+        {
+            bgImage.sprite = null;
+            bgImage.color = new Color32(169, 173, 133, 255);
         }
     }
 }

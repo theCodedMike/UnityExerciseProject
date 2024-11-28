@@ -22,6 +22,7 @@ namespace Assets.Scripts.M11D28
         public void OnPointerClick(PointerEventData eventData)
         {
             GetComponentInParent<LabelTagGroup>().ChangeLabelState(this);
+            transform.root.GetComponentInChildren<ItemViewGroup>().OnLabelTagChange(this);
         }
 
         public void ResetColor()
@@ -35,5 +36,7 @@ namespace Assets.Scripts.M11D28
             image.color = new Color32(33, 48, 74, 255);
             text.color = Color.white;
         }
+
+        public string GetText() => text.text;
     }
 }

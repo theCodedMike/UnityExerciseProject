@@ -38,12 +38,6 @@ namespace Assets.Scripts.M11D28
             Clear();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-
         public void SetItemView(ItemView itemView)
         {
             SetUiEffect();
