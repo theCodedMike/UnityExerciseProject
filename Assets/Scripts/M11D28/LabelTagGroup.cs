@@ -8,14 +8,24 @@ namespace Assets.Scripts.M11D28
 
         private LabelTag currentSelectedTag;
 
+        private LabelTag[] labelTags;
+
+        private ItemViewGroup itemViewGroup;
 
         // Start is called before the first frame update
         void Start()
         {
-            Transform child = transform.GetChild(0);
-            lastSelectedTag = child.GetComponent<LabelTag>();
-            currentSelectedTag = lastSelectedTag;
+            labelTags = transform.GetComponentsInChildren<LabelTag>();
+            foreach (var labelTag in labelTags)
+            {
+                labelTag.OnLabelTagChangeEvent = ChangeLabelState;
+            }
+
+            currentSelectedTag = labelTags[0];
+            lastSelectedTag = currentSelectedTag;
             currentSelectedTag.SetSelectedColor();
+
+            itemViewGroup = transform.root.GetComponentInChildren<ItemViewGroup>();
         }
 
         public void ChangeLabelState(LabelTag current)
@@ -28,6 +38,8 @@ namespace Assets.Scripts.M11D28
             currentSelectedTag.SetSelectedColor();
             lastSelectedTag = currentSelectedTag;
 
+
+            itemViewGroup.OnLabelTagChange(current);
         }
     }
 }

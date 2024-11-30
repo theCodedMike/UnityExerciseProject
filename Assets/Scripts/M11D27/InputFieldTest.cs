@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InputFieldTest : MonoBehaviour
@@ -13,6 +14,20 @@ public class InputFieldTest : MonoBehaviour
         inputField.onValueChanged.AddListener(OnValueChanged);
         inputField.onEndEdit.AddListener(OnEndEdit);
         inputField.onSelect.AddListener(OnSelect);
+        inputField.onDeselect.AddListener(OnDeselect);
+    }
+
+    private void OnDisable()
+    {
+        inputField.onValueChanged.RemoveAllListeners();
+        inputField.onEndEdit.RemoveAllListeners();
+        inputField.onSelect.RemoveAllListeners();
+        inputField.onDeselect.RemoveAllListeners();
+    }
+
+    private void OnDeselect(string value)
+    {
+        print($"InputField.OnDeselect: {value}");
     }
 
     private void OnSelect(string value)
@@ -20,12 +35,13 @@ public class InputFieldTest : MonoBehaviour
         print($"InputField.OnSelect: {value}");
     }
 
+    // 按下回车
     private void OnEndEdit(string value)
     {
         print($"InputField.OnEndEdit: {value}");
     }
 
-    // 按下回车
+    // 输入中...
     void OnValueChanged(string value)
     {
         print($"InputField.OnValueChanged: {value}");

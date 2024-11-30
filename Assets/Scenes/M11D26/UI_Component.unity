@@ -1519,7 +1519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u4F60\u597D<i><b><color=red>\u4E2D\u56FD</color></b></i>\uFF0C\u6211\u5728<size=50>\u4E0A\u6D77</size>\u7684\u6D66\u4E1C\u65B0\u533A,
-    NICE to meet you!"
+    NICE to meet you! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9675e5c42ba58f24cbf0fc1ddd877cc9, type: 2}
   m_sharedMaterial: {fileID: 8293305184697369020, guid: 9675e5c42ba58f24cbf0fc1ddd877cc9, type: 2}
@@ -1628,7 +1628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0000015698653}
+  m_AnchoredPosition: {x: 0, y: 0.00037871388}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &668914234
@@ -4269,7 +4269,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 0, y: 0}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -5757,7 +5757,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 867514907}
   m_Direction: 3
   m_Value: 0
-  m_Size: 0.99998295
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

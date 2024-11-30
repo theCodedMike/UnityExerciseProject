@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts.M11D28
 {
-    [ExecuteInEditMode]
     public class ItemViewGroup : MonoBehaviour
     {
         private GameObject itemPrefab;
@@ -23,6 +24,7 @@ namespace Assets.Scripts.M11D28
         {
             InitOther();
             InitDatabase();
+            Spawn();
         }
 
         void InitOther()
@@ -55,10 +57,10 @@ namespace Assets.Scripts.M11D28
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            /*if (Input.GetKeyDown(KeyCode.Space))
             {
                 Spawn();
-            }
+            }*/
         }
 
         void Spawn()
@@ -82,7 +84,7 @@ namespace Assets.Scripts.M11D28
             }
         }
 
-        // 选中某个item后，将其展示在后侧面板
+        // 选中某个item后，将其展示在右侧面板
         void SelectedView(ItemView selectedItemView)
         {
             // 处理选中Item的背景
@@ -130,8 +132,7 @@ namespace Assets.Scripts.M11D28
         public void OnLabelTagChange(LabelTag labelTag)
         {
             string labelName = labelTag.GetText();
-            print($"---{labelName}---");
-
+            
             filterStrategy = labelName switch
             {
                 "道具" => (Item item) => item.tags.Contains("道具"),
@@ -141,6 +142,11 @@ namespace Assets.Scripts.M11D28
             };
 
             Spawn();
+        }
+
+        void OnDisable()
+        {
+            Clear();
         }
     }
 }

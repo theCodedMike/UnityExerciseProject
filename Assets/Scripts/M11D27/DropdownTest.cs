@@ -10,22 +10,17 @@ public class DropdownTest : MonoBehaviour
     {
         dropdown.onValueChanged.AddListener(OnValueChanged);
     }
-
-    private void OnValueChanged(int value)
+    private void OnDisable()
     {
-        print($"Dropdown.OnValueChanged: {value}");
-
+        dropdown.onValueChanged.RemoveAllListeners();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnValueChanged(int idx)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        print($"Dropdown.OnValueChanged: {idx}, {dropdown.captionText.text}, {dropdown.options[idx].text}");
+        // output:
+        // 0, Option A, Option A
+        // 1, Option B, Option B
+        // 2, Option C, Option C
     }
 }

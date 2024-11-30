@@ -15,13 +15,13 @@ public class ImageTest : MonoBehaviour, IPointerEnterHandler, IPointerMoveHandle
     {
         print("Image.OnPointerMove...");
     }
-    // 需要鼠标左键按下
+    // 需要鼠标左键按下，先执行它
     public void OnPointerDown(PointerEventData eventData)
     {
         print("Image.OnPointerDown...");
         image.color = Color.green;
     }
-    // 需要鼠标左键按下
+    // 需要鼠标左键按下，再执行它
     public void OnPointerClick(PointerEventData eventData)
     {
         print("Image.OnPointerClick...");

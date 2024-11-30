@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,6 +12,9 @@ namespace Assets.Scripts.M11D28
 
         private TMP_Text text;
 
+        public Action<LabelTag> OnLabelTagChangeEvent;
+
+
         // Start is called before the first frame update
         void Awake()
         {
@@ -21,8 +25,7 @@ namespace Assets.Scripts.M11D28
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            GetComponentInParent<LabelTagGroup>().ChangeLabelState(this);
-            transform.root.GetComponentInChildren<ItemViewGroup>().OnLabelTagChange(this);
+            OnLabelTagChangeEvent(this);
         }
 
         public void ResetColor()

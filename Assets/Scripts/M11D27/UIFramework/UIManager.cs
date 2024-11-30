@@ -29,9 +29,10 @@ namespace Assets.Scripts.M11D27.UIFramework
             canvasObj = GameObject.Find("Canvas");
             if (canvasObj == null)
             {
-                Debug.LogError($"找不到Canvas游戏对象，请创建.");
+                Debug.LogError("找不到Canvas游戏对象，请创建...");
                 return;
             }
+            
             UIPanelList uiPanelList = Resources.Load<UIPanelList>("UIPanelList");
             foreach (var panel in uiPanelList.panelList)
             {
