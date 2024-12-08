@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.M11D29
+namespace M11D29
 {
     public class Test : MonoBehaviour
     {

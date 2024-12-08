@@ -1,36 +1,39 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ToggleTest : MonoBehaviour
+namespace M11D27
 {
-    public Toggle toggle;
+    public class ToggleTest : MonoBehaviour
+    {
+        public Toggle toggle;
 
 
-    void OnEnable()
-    {
-        toggle.onValueChanged.AddListener(OnValueChanged);
-    }
-    void OnDisable()
-    {
-        toggle.onValueChanged.RemoveAllListeners();
-    }
+        void OnEnable()
+        {
+            toggle.onValueChanged.AddListener(OnValueChanged);
+        }
+        void OnDisable()
+        {
+            toggle.onValueChanged.RemoveAllListeners();
+        }
 
-    private void OnValueChanged(bool value)
-    {
-        print($"Toggle.OnValueChanged: {value}");
-        // output:
-        // False / True
-    }
+        private void OnValueChanged(bool value)
+        {
+            print($"Toggle.OnValueChanged: {value}");
+            // output:
+            // False / True
+        }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

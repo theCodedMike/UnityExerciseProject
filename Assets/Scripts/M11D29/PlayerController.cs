@@ -1,8 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.M11D29
+namespace M11D29
 {
+    // ReSharper disable once HollowTypeName
     public class PlayerController : MonoBehaviour
     {
         [Header("玩家")]
@@ -27,8 +28,8 @@ namespace Assets.Scripts.M11D29
         // Update is called once per frame
         void Update()
         {
-        
-        
+
+
         }
 
         // 这么写不行

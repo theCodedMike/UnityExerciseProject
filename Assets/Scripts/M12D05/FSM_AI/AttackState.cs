@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.M12D05.FSM_AI
+namespace M12D05.FSM_AI
 {
     public class AttackState : FSMState
     {
         private Transform PlayerTransForm;//玩家位置信息
-        public AttackState(FSMSystem fsm):base(fsm)
+        public AttackState(FSMSystem fsm) : base(fsm)
         {
             stateID = StateID.Attack;
             PlayerTransForm = GameObject.Find("Player").transform;

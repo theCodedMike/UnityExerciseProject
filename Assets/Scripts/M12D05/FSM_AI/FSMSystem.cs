@@ -7,7 +7,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05.FSM_AI
+namespace M12D05.FSM_AI
 {
     public class FSMSystem
     {
@@ -67,7 +67,7 @@ namespace Assets.Scripts.M12D05.FSM_AI
         /// <param name="trans">转换条件</param>
         public void PerformTransition(Transition trans)
         {
-		
+
             if (trans == Transition.NoneTransition)
             {
                 Debug.Log("无法执行null的转换条件");

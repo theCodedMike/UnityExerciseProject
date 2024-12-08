@@ -1,10 +1,14 @@
-[System.Serializable]
-public class PanelInfo {
-    public PanelType type;
-    public string path;
-}
-
-public enum PanelType
+namespace M11D27.UIFramework
 {
-    Login, Main, Setting, Bag
+    [System.Serializable]
+    public class PanelInfo
+    {
+        public PanelType type;
+        public string path;
+    }
+
+    public enum PanelType
+    {
+        Login, Main, Setting, Bag
+    }
 }

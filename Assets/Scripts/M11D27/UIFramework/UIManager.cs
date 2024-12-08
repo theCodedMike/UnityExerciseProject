@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.M11D27.UIFramework
+namespace M11D27.UIFramework
 {
+    // ReSharper disable once HollowTypeName
     public class UIManager
     {
         private static UIManager instance;
-        public static UIManager Instance {  get { return instance ??= new UIManager(); } }
-        private UIManager() {
+        public static UIManager Instance { get { return instance ??= new UIManager(); } }
+        private UIManager()
+        {
             panelPathDic = new Dictionary<PanelType, string>();
             panelObjDic = new Dictionary<PanelType, BasePanel>();
             panelStack = new Stack<BasePanel>();
@@ -32,7 +34,7 @@ namespace Assets.Scripts.M11D27.UIFramework
                 Debug.LogError("找不到Canvas游戏对象，请创建...");
                 return;
             }
-            
+
             UIPanelList uiPanelList = Resources.Load<UIPanelList>("UIPanelList");
             foreach (var panel in uiPanelList.panelList)
             {
@@ -45,8 +47,9 @@ namespace Assets.Scripts.M11D27.UIFramework
         /// 显示Panel
         /// </summary>
         /// <param name="panelType">panel类型</param>
-        public BasePanel PushPanel(PanelType panelType) {
-            if(panelStack.Count > 0)
+        public BasePanel PushPanel(PanelType panelType)
+        {
+            if (panelStack.Count > 0)
             {
                 BasePanel topPanel = panelStack.Peek();
                 topPanel.OnPause();
@@ -61,7 +64,8 @@ namespace Assets.Scripts.M11D27.UIFramework
             return currPanel;
         }
 
-        BasePanel GetPanel(PanelType panelType) {
+        BasePanel GetPanel(PanelType panelType)
+        {
             BasePanel panel;
 
             if (panelObjDic.TryGetValue(panelType, out panel))
@@ -69,7 +73,7 @@ namespace Assets.Scripts.M11D27.UIFramework
                 return panel;
             }
 
-            if(panelPathDic.TryGetValue(panelType, out string path))
+            if (panelPathDic.TryGetValue(panelType, out string path))
             {
                 GameObject prefab = Resources.Load<GameObject>(path);
                 GameObject instObj = GameObject.Instantiate(prefab, canvasObj.transform);

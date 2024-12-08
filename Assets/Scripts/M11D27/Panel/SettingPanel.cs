@@ -1,7 +1,7 @@
-using Assets.Scripts.M11D27.UIFramework;
+using M11D27.UIFramework;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.M11D27.Panel
+namespace M11D27.Panel
 {
     public class SettingPanel : BasePanel
     {
@@ -28,13 +28,13 @@ namespace Assets.Scripts.M11D27.Panel
         // Start is called before the first frame update
         void Start()
         {
-        
+
         }
 
         // Update is called once per frame
         void Update()
         {
-        
+
         }
     }
 }

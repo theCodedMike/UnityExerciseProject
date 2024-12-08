@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.M11D28
+namespace M11D28
 {
     public class LabelTagGroup : MonoBehaviour
     {
@@ -32,7 +32,7 @@ namespace Assets.Scripts.M11D28
         {
             if (current == currentSelectedTag)
                 return;
-            
+
             lastSelectedTag.ResetColor();
             currentSelectedTag = current;
             currentSelectedTag.SetSelectedColor();

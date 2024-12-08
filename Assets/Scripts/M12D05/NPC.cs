@@ -1,7 +1,6 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05
+namespace M12D05
 {
     // 这是老师写的
     public class NPC : MonoBehaviour

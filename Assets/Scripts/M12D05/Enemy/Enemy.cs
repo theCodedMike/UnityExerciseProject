@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.M12D05.FSM_AI;
+﻿using M12D05.FSM_AI;
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05.Enemy
+namespace M12D05.Enemy
 {
     /// <summary>
     /// 怪物类

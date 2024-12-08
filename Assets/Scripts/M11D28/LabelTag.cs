@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.M11D28
+namespace M11D28
 {
     public class LabelTag : MonoBehaviour, IPointerClickHandler
     {

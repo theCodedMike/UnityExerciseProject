@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05
+namespace M12D05
 {
     // 我自己写的
     public class Person : MonoBehaviour
@@ -30,10 +30,11 @@ namespace Assets.Scripts.M12D05
 
         void Logic()
         {
-            if(state == State.Patrol)
+            if (state == State.Patrol)
             {
 
-            } else if (state == State.Attack)
+            }
+            else if (state == State.Attack)
             {
                 if (hp < 10) // 血快掉光了，逃跑
                 {
@@ -53,8 +54,8 @@ namespace Assets.Scripts.M12D05
             if (timer <= 0)
             {
                 timer = Random.Range(3f, 5f);
-                
-                genDir:
+
+            genDir:
                 Vector3 newDir = Random.Range(1, 5) switch
                 {
                     1 => Vector3.forward,

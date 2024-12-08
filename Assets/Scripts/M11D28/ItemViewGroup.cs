@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Assets.Scripts.M11D28
+namespace M11D28
 {
     public class ItemViewGroup : MonoBehaviour
     {
@@ -132,7 +130,7 @@ namespace Assets.Scripts.M11D28
         public void OnLabelTagChange(LabelTag labelTag)
         {
             string labelName = labelTag.GetText();
-            
+
             filterStrategy = labelName switch
             {
                 "道具" => (Item item) => item.tags.Contains("道具"),

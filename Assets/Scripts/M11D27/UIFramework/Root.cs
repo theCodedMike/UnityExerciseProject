@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.M11D27.UIFramework
+namespace M11D27.UIFramework
 {
     public class Root : MonoBehaviour
     {
@@ -13,7 +13,7 @@ namespace Assets.Scripts.M11D27.UIFramework
         // Update is called once per frame
         void Update()
         {
-        
+
         }
     }
 }

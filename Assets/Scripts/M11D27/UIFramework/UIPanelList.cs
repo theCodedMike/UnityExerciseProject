@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "UIPanelList.asset", menuName = "UIPanel")]
-public class UIPanelList : ScriptableObject
+namespace M11D27.UIFramework
 {
-    public List<PanelInfo> panelList;
+    [CreateAssetMenu(fileName = "UIPanelList.asset", menuName = "UIPanel")]
+    public class UIPanelList : ScriptableObject
+    {
+        public List<PanelInfo> panelList;
+    }
 }

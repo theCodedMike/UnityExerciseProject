@@ -1,11 +1,8 @@
-using System;
-using M11D22;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UIElements;
-using Random = UnityEngine.Random;
 
-namespace Assets.Scripts.M12D05
+using UnityEngine;
+
+using Random = UnityEngine.Random;
+namespace M12D05
 {
     // 这是我自己的实现
     public class FSM_Test : MonoBehaviour

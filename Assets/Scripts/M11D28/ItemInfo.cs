@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.M11D28
+namespace M11D28
 {
     public class ItemInfo : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Assets.Scripts.M11D28
+namespace M11D28
 {
     public class ItemDatabase
     {

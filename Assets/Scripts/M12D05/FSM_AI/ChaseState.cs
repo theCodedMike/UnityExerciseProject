@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05.FSM_AI
+namespace M12D05.FSM_AI
 {
     /// <summary>
     /// 追逐状态类

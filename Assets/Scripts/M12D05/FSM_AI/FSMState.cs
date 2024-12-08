@@ -7,12 +7,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.M12D05.FSM_AI
+namespace M12D05.FSM_AI
 {
-    public abstract class FSMState 
+    public abstract class FSMState
     {
         protected StateID stateID; //状态对应的ID
-        public StateID ID {
+        public StateID ID
+        {
             get { return stateID; }
         }
 

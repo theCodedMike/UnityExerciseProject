@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.M12D05.FSM_AI
+﻿namespace M12D05.FSM_AI
 {
     /// <summary>
     /// 状态切换条件
