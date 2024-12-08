@@ -11,6 +11,7 @@ TagManager:
   - Asteroid
   - DaZhao
   - Shockwave
+  - Door
   layers:
   - Default
   - TransparentFX
