@@ -1,0 +1,22 @@
+<Root>
+  <Person>
+    <Name>ZhangSan</Name>
+    <Age>15</Age>
+    <IsStudent>true</IsStudent>
+    <Sex>男</Sex>
+  </Person>
+  
+  <Person>
+    <Name>LiSi</Name>
+    <Age>20</Age>
+    <IsStudent>true</IsStudent>
+    <Sex>男</Sex>
+  </Person>
+
+  <Person>
+    <Name>WangWu</Name>
+    <Age>35</Age>
+    <IsStudent>false</IsStudent>
+    <Sex>女</Sex>
+  </Person>
+</Root>
