@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/M12D06/Scene1.unity
-    guid: 4dded5d781ec67f40be13d5055f9ab13
-  - enabled: 0
-    path: Assets/Scenes/M12D06/Scene2.unity
-    guid: c9f91965de9f6a74fb765652ffa89360
-  - enabled: 0
-    path: Assets/Scenes/M12D06/Loading.unity
-    guid: 8045831ce9b47b64da15385892862d36
+  - enabled: 1
+    path: Assets/EasyTouchBundle/EasyTouchControls/Examples/Version 1.X/FPS_Example.unity
+    guid: ed8b4fd5fff466a408f374cb316554c7
   m_configObjects: {}
