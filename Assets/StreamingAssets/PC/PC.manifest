@@ -1,0 +1,13 @@
+ManifestFileVersion: 0
+CRC: 4048689675
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: obj
+      Dependencies: {}
+    Info_1:
+      Name: bagitem
+      Dependencies: {}
+    Info_2:
+      Name: frame_char
+      Dependencies: {}
